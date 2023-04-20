@@ -10,13 +10,43 @@
   flex-wrap: wrap;
 }
 
+/** Album Card Styles **/
+
 .album-card {
   width: 95%;
   height: 100px;
   padding: 10px;
   margin: 5px;
   border-radius: 3px;
-  background-color: goldenrod;
+  background-color: #ffc600;
+}
+
+/** Album View Styles **/
+.photos-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/** Photo Card Styles **/
+.photo-card {
+  width: 95%;
+  background-color: #fff;
+  padding: 10px;
+  margin-block-end: 10px;
+  border-radius: 5px;
+  position: relative
+}
+
+.photo-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.fav-icon {
+  position: fixed;
+  position: absolute;
+  right: 10px;
 }
 
 @media only screen and (min-width: 768px) {

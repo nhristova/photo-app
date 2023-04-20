@@ -1,16 +1,23 @@
-import { Albums } from '../types/Albums';
+import { Album } from '../types/Albums';
+import { Photo } from '../types/Photo';
 import photosLocal from './photos.json';
 
-export const loadData = (): Albums => {
+export const loadData = (): Album[] => {
+  // TODO: Return an array of Albums {id, photos}
 
-  return photosLocal.reduce((acc, p) => {
-    if (!acc[p.albumId]) {
-      acc[p.albumId] = [];
+  let a = photosLocal.reduce((acc: any, p: Photo) => {
+    let id = p.albumId;
+    if (!acc[id]) {
+      acc[id] = [];
     }
 
-    acc[p.albumId].push(p);
+    acc[id].push(p);
 
     return acc;
-  }, {} as Albums);
+  }, {});
+
+  return Object.entries(a).map(([key, value]) => {
+    return { id: key, photos: value } as Album;
+  });
 
 }

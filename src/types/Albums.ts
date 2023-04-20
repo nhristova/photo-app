@@ -1,6 +1,7 @@
 import { Photo } from "./Photo";
 
-export interface Albums {
+export interface Album {
 
-  [id: number]: Photo[];
+  id: string; 
+  photos: Photo[];
 }
