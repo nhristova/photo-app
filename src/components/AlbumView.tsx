@@ -1,17 +1,28 @@
-import { Album } from "../types/Albums";
-import { PhotoCard } from "./PhotoCard";
+import { useEffect, useState } from 'react';
+import { getAlbumById } from '../data/loadDataLocal';
+import { Album } from '../types/Albums';
+import { PhotoCard } from './PhotoCard';
+import { useParams } from 'react-router-dom';
+import { Photo } from '../types/Photo';
 
 interface AlbumViewProps {
   album: Album;
 }
 
-export function AlbumView({ album }: AlbumViewProps) {
+export function AlbumView() {
+  const { id } = useParams();
+  const [photos, setPhotos] = useState([] as Photo[]);
+
+  useEffect(() => {
+    setPhotos(getAlbumById(id));
+  }, [id])
+
   return (
     <>
-      <h2>🌄 {album.id}</h2>
+      <h2>🌄 {id}</h2>
       <div className="photos-list">
         {
-          album.photos.slice(0, 3).map(p => <PhotoCard photo={p} />)
+          photos.slice(0, 3).map(p => <PhotoCard key={p.id} photo={p} />)
         }
       </div>
     </>
