@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { getAlbumById } from '../data/loadDataLocal';
 import { Album } from '../types/Albums';
 import { PhotoCard } from './PhotoCard';
-import { useParams } from 'react-router-dom';
 import { Photo } from '../types/Photo';
 
 interface AlbumViewProps {
@@ -15,7 +15,7 @@ export function AlbumView() {
 
   useEffect(() => {
     setPhotos(getAlbumById(id));
-  }, [id])
+  }, [id]);
 
   return (
     <>
