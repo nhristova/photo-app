@@ -13,8 +13,8 @@ const transformToAlbumsById = (photos: Photo[]): { [id: string]: Photo[] } => {
 
     return acc;
   }, {});
-}
-export const loadData = (): Album[] => {
+};
+export const getAlbums = (): Album[] => {
   let a = transformToAlbumsById(photosLocal);
 
   return Object.entries(a).map(([key, value]) => {
@@ -23,8 +23,12 @@ export const loadData = (): Album[] => {
 
 };
 
-export const albumsById = transformToAlbumsById(photosLocal);
+const albumsById = transformToAlbumsById(photosLocal);
 
-export const getAlbumById = (id: string = '1') => {
+export const getAlbumById = (id?: string) => {
+  if(!id || !(id in albumsById)) {
+    return [];
+  }
+
   return albumsById[id];
-}
+};

@@ -5,10 +5,6 @@ import { Album } from '../types/Albums';
 import { PhotoCard } from './PhotoCard';
 import { Photo } from '../types/Photo';
 
-interface AlbumViewProps {
-  album: Album;
-}
-
 export function AlbumView() {
   const { id } = useParams();
   const [photos, setPhotos] = useState([] as Photo[]);
@@ -19,7 +15,7 @@ export function AlbumView() {
 
   return (
     <>
-      <h2>🌄 {id}</h2>
+      <h2>🌄 Album {id}</h2>
       <div className="photos-list">
         {
           photos.slice(0, 3).map(p => <PhotoCard key={p.id} photo={p} />)

@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import { loadData } from '../data/loadDataLocal';
+import { getAlbums } from '../data/loadDataLocal';
 import { AlbumCard } from '../components/AlbumCard';
 import { Album } from '../types/Albums';
 
 export function AlbumsListView() {
-  const [albums, setAlbums] = useState(loadData());
+  const [albums, setAlbums] = useState(getAlbums());
 
   return (
     <>

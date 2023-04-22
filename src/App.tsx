@@ -5,7 +5,9 @@ function App() {
 
   return (
     <div className="App">
-      <Link to='/'>🏠 Go home </Link>
+      <Link to='/'>🏠 Home </Link>
+      <Link to='/albums'>🖼 Albums</Link>
+      <Link to='/favorites'>♥ Favorites</Link>
       <h1>Photo App 😎</h1>
       <Outlet />
     </div>
