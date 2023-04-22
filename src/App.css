@@ -9,9 +9,38 @@ img {
   width: 100%;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+.layout {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 2fr 8fr ;
+  grid-template-areas: 
+    "header header"
+    "navigation main";
+}
+
 .nav-bar {
-  display: flex;
-  justify-content: space-around;
+  grid-area: navigation;
+  padding-block-start: 10px;
+  border-right: 1px solid rgb(218,220,224);
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 10px 10px 20px;
+  text-align: left;
+}
+
+.header {
+  grid-area: header;
+  border-bottom: 1px solid rgb(218,220,224);
+}
+
+.main {
+  grid-area: main;
 }
 
 /** Album Card Styles **/

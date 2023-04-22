@@ -19,9 +19,11 @@ export function FavoritesView() {
   }, [favorites])
 
   return (
-    <div>
-      <h2>Faves</h2>
-      {favs.map(photo => <PhotoCard key={photo.id} photo={photo} />)}
-    </div>
+    <>
+      <h2>Favorites</h2>
+      <div className="photos-list">
+        {favs.map(photo => <PhotoCard key={photo.id} photo={photo} />)}
+      </div>
+    </>
   )
 }

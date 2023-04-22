@@ -7,7 +7,7 @@ interface AlbumCardProps {
 export function AlbumCard(props: AlbumCardProps) {
   return (
     <div className="album-card">
-      <Link to={`albums/${props.albumName}`}>Album {props.albumName}</Link>
+      <Link to={`/albums/${props.albumName}`}>Album {props.albumName}</Link>
     </div>
   )
 }
