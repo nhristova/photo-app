@@ -12,7 +12,7 @@
 3. Views
     - [x] Albums list view  (1, 2, 3, 4, 5...) - actions - open album
     - [x] Single album view 
-    - [ ] Favorites album view
+    - [x] Favorites album view
     - [x] Album card component - image?, name
     - [x] Photo card component - image, title 
 4. Favourites 
@@ -22,3 +22,6 @@
 5. Build prod, deploy static github page
 6. Styles - make it look good!
 7. Tests
+
+Credits:
+- Star by ratubilqis1986 from <a href="https://thenounproject.com/browse/icons/term/star/" target="_blank" title="Star Icons">Noun Project</a>

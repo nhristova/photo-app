@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 
 :root {
-  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, system-ui, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -60,7 +60,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffebd1;
+    background-color: #f5f5f7;
   }
   a:hover {
     color: #747bff;
