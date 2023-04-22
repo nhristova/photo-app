@@ -4,22 +4,30 @@ export interface AppState {
   favorites: number[],
 }
 
-const initialState: number[] = [3];
+const initialState: AppState = {
+  favorites: [3],
+};
 
 const favoritesSlice = createSlice({
   name: 'favorites',
   initialState,
   reducers: {
     add: (state, action) => {
-      return [...state, action.payload]
+      return {
+        ...state,
+        favorites: [...state.favorites, action.payload]
+      }
     },
     remove: (state, action) => {
-      return state.filter(id => id !== action.payload)
+      return {
+        ...state,
+        favorites: state.favorites.filter(id => id !== action.payload)
+      }
     }
   }
 });
 
 export const { add, remove } = favoritesSlice.actions;
-export const selectFavorites = (state: number[]) => state;
+export const selectFavorites = (state: AppState) => state.favorites;
 
 export default favoritesSlice.reducer;

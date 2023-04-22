@@ -3,7 +3,7 @@
 1. Tech: 
     - [x] ReactJS
     - [x] Redux
-    - [ ] Redux-Persist
+    - [x] Redux-Persist
 2. Data source: https://jsonplaceholder.typicode.com/photos
     - [x] Stage 1 - use local data
     - [ ] Stage 2 - fetch data
@@ -18,7 +18,7 @@
 4. Favourites 
     - [x] actions - add, remove fav
     - [x] data stored in Redux State-a
-    - [ ] Favorites album view
-    - [ ] Persist favorites after page reload (restart?)
+    - [x] Persist favorites after page reload (restart?)
 5. Build prod, deploy static github page
 6. Styles - make it look good!
+7. Tests
