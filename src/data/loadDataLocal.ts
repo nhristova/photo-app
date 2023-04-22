@@ -1,4 +1,4 @@
-import { Album } from '../types/Albums';
+import { Album } from '../types/Album';
 import { Photo } from '../types/Photo';
 import photosLocal from './photos.json';
 
@@ -17,8 +17,13 @@ const transformToAlbumsById = (photos: Photo[]): { [id: string]: Photo[] } => {
 export const getAlbums = (): Album[] => {
   let a = transformToAlbumsById(photosLocal);
 
-  return Object.entries(a).map(([key, value]) => {
-    return { id: key, photos: value } as Album;
+  return Object.entries(a).map(([id, photos]) => {
+    return {
+      id: id,
+      photos: photos,
+      count: photos.length,
+      thumbnail: photos[0].thumbnailUrl
+    } as Album;
   });
 
 };
@@ -26,7 +31,7 @@ export const getAlbums = (): Album[] => {
 const albumsById = transformToAlbumsById(photosLocal);
 
 export const getAlbumById = (id?: string) => {
-  if(!id || !(id in albumsById)) {
+  if (!id || !(id in albumsById)) {
     return [];
   }
 

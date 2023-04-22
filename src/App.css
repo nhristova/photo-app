@@ -16,8 +16,8 @@ h1 {
 .layout {
   display: grid;
   column-gap: 20px;
-  grid-template-columns: 2fr 8fr ;
-  grid-template-areas: 
+  grid-template-columns: 2fr 8fr;
+  grid-template-areas:
     "header header"
     "navigation main";
 }
@@ -25,7 +25,7 @@ h1 {
 .nav-bar {
   grid-area: navigation;
   padding-block-start: 10px;
-  border-right: 1px solid rgb(218,220,224);
+  border-right: 1px solid rgb(218, 220, 224);
 }
 
 .nav-link {
@@ -36,7 +36,7 @@ h1 {
 
 .header {
   grid-area: header;
-  border-bottom: 1px solid rgb(218,220,224);
+  border-bottom: 1px solid rgb(218, 220, 224);
 }
 
 .main {
@@ -44,22 +44,29 @@ h1 {
 }
 
 /** Album Card Styles **/
+.albums-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
 
 .album-card {
-  width: 45%;
-  max-width: 250px;
-  height: 100px;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 3px;
-  background-color: #ffc600;
+  text-align: left;
+}
+
+.album-img {
+  border-radius: 10px;
+}
+
+.album-detail {
+  font-size: 0.7rem;
 }
 
 /** Album View Styles **/
 .photos-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1.4rem;
+  grid-gap: 0.2rem;
   justify-content: space-between;
   justify-items: center;
 }
@@ -77,7 +84,6 @@ h1 {
 .photo-img {
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .fav-icon {
@@ -92,18 +98,13 @@ h1 {
   filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
 }
 
-@media only screen and (min-width: 425px) {
-
-}
+@media only screen and (min-width: 425px) {}
 
 @media only screen and (min-width: 640px) {
-  .album-card {
-    width: 30%;
-  }
-
   .photos-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .photo-card {
     font-size: 1rem;
   }

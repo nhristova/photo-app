@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getAlbumById } from '../data/loadDataLocal';
-import { Album } from '../types/Albums';
+import { Album } from '../types/Album';
 import { PhotoCard } from './PhotoCard';
 import { Photo } from '../types/Photo';
 
@@ -18,7 +18,7 @@ export function AlbumView() {
       <h2>🌄 Album {id}</h2>
       <div className="photos-list">
         {
-          photos.slice(0, 3).map(p => <PhotoCard key={p.id} photo={p} />)
+          photos.slice(0, 7).map(p => <PhotoCard key={p.id} photo={p} />)
         }
       </div>
     </>
