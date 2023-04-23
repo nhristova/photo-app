@@ -1,6 +1,9 @@
 import { MouseEventHandler } from 'react';
 import { NavLink } from 'react-router-dom';
 import butterfly from '../assets/butterfly.svg';
+import starRainbow from '../assets/star-rainbow.svg';
+import circle from '../assets/circle.svg';
+import hexagon from '../assets/hexagon.svg';
 
 interface NavigationProps {
   toggleMenu: MouseEventHandler;
@@ -12,12 +15,22 @@ export function Navigation({ toggleMenu, openStyle }: NavigationProps) {
     <nav id="nav-bar" className={`nav-bar ${openStyle}`}>
       <div className="menu-header">
         <div className="menu-top" onClick={toggleMenu}>Hide</div>
-        <img src={butterfly} className="menu-logo" alt="App logo butterfly" />
-        <div>Photos</div>
+        <div className="menu-brand">
+          <img src={butterfly} className="menu-logo" alt="App logo butterfly" />
+          Color Mosaic</div>
       </div>
-      <NavLink to='/' className='nav-link' onClick={toggleMenu}>⛺ Photos </NavLink>
-      <NavLink to='/albums' className='nav-link' onClick={toggleMenu}>🌅 Albums</NavLink>
-      <NavLink to='/favorites' className='nav-link' onClick={toggleMenu}>💛 Favorites</NavLink>
+      <NavLink to="/" className="nav-link" onClick={toggleMenu}>
+        <img src={hexagon} className="nav-icon" />
+        <span>Photos</span>
+      </NavLink>
+      <NavLink to="/albums" className="nav-link" onClick={toggleMenu}>
+        <img src={circle} className="nav-icon" />
+        <span>Albums</span>
+      </NavLink>
+      <NavLink to="/favorites" className="nav-link" onClick={toggleMenu}>
+        <img src={starRainbow} className="nav-icon" />
+        <span>Favorites</span>
+      </NavLink>
     </nav>
   )
 }

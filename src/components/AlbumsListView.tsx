@@ -8,7 +8,7 @@ export function AlbumsListView() {
 
   return (
     <>
-      <h2>🌅 Albums</h2>
+      <h2>Albums</h2>
       <div className="albums-list">
         {albums.map((a) => <AlbumCard key={a.id} {...a} />)}
       </div>

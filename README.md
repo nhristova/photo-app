@@ -16,7 +16,6 @@ View at: https://nhristova.github.io/photo-app/
     - [x] Use local data (for backup if api fails)
     - [x] Fetch data
     - [x] Store in Redux
-    - [ ] Stage 99 - own api?
 3. UI
     - [x] Albums list view  (1, 2, 3, 4, 5...) - actions - open album
     - [x] Single album view 
@@ -39,14 +38,15 @@ View at: https://nhristova.github.io/photo-app/
     - [ ] Back action on albums
     - [ ] Wide screen take whole width and height
     - [ ] Separate styles in relevant files
-    - [ ] Style hide section on top of menu 
+    - [x] Style hide section on top of menu 
     - [ ] Action to close the menu when clicked outside of it
     - [ ] Load all albums & photos, pagination?, sticky header?
     - [ ] Dark theme?
 7. Tests
 
-Credits:
+Image credits:
 - Star by ratubilqis1986 from <a href="https://thenounproject.com/browse/icons/term/star/" target="_blank" title="Star Icons">Noun Project</a>
 - Menu by DewDrops from <a href="https://thenounproject.com/browse/icons/term/menu/" target="_blank" title="menu Icons">Noun Project</a>
+- Arrow Back by Division Icons from <a href="https://thenounproject.com/browse/icons/term/arrow-back/" target="_blank" title="Arrow Back Icons">Noun Project</a>
 - Butterfly by freepik <a href="https://www.freepik.com/free-vector/colorful-rainbow-set_2266161.htm" target="_blank" title="butterfly">FreePik</a>
 - Truck by <a href="https://indiefolio.com/project/59d622cb6e193/motion-series-1-loading-truck" target="_blank" title="truck">Indiefolio</a>
