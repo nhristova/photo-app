@@ -6,12 +6,14 @@ import { AlbumView } from './components/AlbumView';
 import { AlbumsListView } from './components/AlbumsListView';
 import { FavoritesView } from './components/FavoritesView';
 
-const options = { basename: '/photo-app' };
+// Only works with createBrowserRouter
+// const options = { basename: '/photo-app' };
 const routes = [
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage />,
+    // Only works with createBrowserRouter
+    // errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -28,9 +30,13 @@ const routes = [
       {
         path: 'favorites',
         element: <FavoritesView />
-      }
+      },
     ]
+  }, 
+  {
+    path: '/*',
+    element: <ErrorPage />
   }
 ];
 
-export const router = createHashRouter(routes)
+export const router = createHashRouter(routes);

@@ -7,9 +7,9 @@ export default function ErrorPage() {
   return (
     <div className="error-page">
       <h1>😵</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
+      <p>Route not found or an unexpected error occurred.</p>
       <p>
-        <i>{error.statusText || error.message}</i>
+        <i>{error?.statusText || error?.message}</i>
       </p>
       <Link to='/'>🏠 Go home </Link>
     </div>

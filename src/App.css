@@ -94,6 +94,7 @@ header h1 {
 /** Error page */
 .error-page {
   padding: 10px;
+  text-align: center;
 }
 
 /** Album Card Styles **/
