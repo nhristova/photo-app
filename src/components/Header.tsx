@@ -11,7 +11,7 @@ export function Header({ toggleMenu }: HeaderProps) {
     <header className='header'>
       <img src={menu} className="hamburger-icon" alt="Open menu" onClick={toggleMenu} />
       <img src={butterfly} className="logo" alt="App logo butterfly" />
-      <h1>Photos</h1>
+      <h1>Color Mosaic</h1>
     </header>
   )
 };

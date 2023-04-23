@@ -1,7 +1,12 @@
 # Photo App
 
+
+## Description
+A responsive photo app. The user can view all photos, browse albums, mark photos as favorites, and view a list of his favorite photos.
+
 View at: https://nhristova.github.io/photo-app/
 
+## Tasks
 1. 🛠 Tech: 
     - [x] ReactJS
     - [x] Redux

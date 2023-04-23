@@ -19,10 +19,10 @@ header h1 {
 .layout {
   display: grid;
   column-gap: 20px;
-  grid-template-columns: 2fr 8fr;
   grid-template-areas:
-    "header header"
-    "main main";
+  "header header"
+  "main main";
+  grid-template-columns: 2fr 8fr;
   grid-template-rows: 80px 1fr;
 }
 
@@ -70,6 +70,7 @@ header h1 {
 .logo {
   width: 45px;
   margin: 10px;
+  margin-left: 20px;
   display: none;
 }
 
@@ -101,7 +102,8 @@ header h1 {
 /** Album Card Styles **/
 .albums-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  grid-auto-rows: minmax(200px,auto);
   grid-gap: 10px;
 }
 
@@ -116,7 +118,9 @@ header h1 {
 /** Album View Styles **/
 .photos-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense;
   grid-gap: 0.2rem;
   justify-content: space-between;
   justify-items: center;
@@ -125,14 +129,43 @@ header h1 {
 /** Photo Card Styles **/
 .photo-card {
   width: 100%;
-  max-width: 250px;
   position: relative;
   box-sizing: border-box;
   font-size: 0.8rem;
+  transition: ease-in-out 0.5s;
+  overflow: hidden;
+}
+
+.photo-card:nth-child(11n) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.photo-card:nth-child(3n) {
+  grid-column: span 1;
+  grid-row: span 2;
 }
 
 .photo-img {
   object-fit: cover;
+  height: 100%;
+}
+
+.photo-title {
+  width: 100%;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.photo-card:hover .photo-title,
+.photo-card:active .photo-title {
+  visibility: initial;
+  padding: 5px;
+  background-color: #f5f5f7;
+  transform: translateY(0);
+  transition: ease-in-out 0.5s;
 }
 
 .fav-icon {
@@ -148,6 +181,13 @@ header h1 {
   cursor: pointer;
   transform: rotate(0.2turn);
   filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .fav-icon:hover {
+    transform: rotate(0.2turn);
+    filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
+  }
 }
 
 @media only screen and (min-width: 425px) {}
@@ -175,34 +215,16 @@ header h1 {
       "navigation main";
   }
 
-  .albums-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .photos-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .photo-card {
     font-size: 1rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .photos-list {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .albums-list {
-    grid-template-columns: repeat(4, 1fr);
-  }
+
 }
 
 
 @media only screen and (min-width: 1440px) {
-  .photos-list {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .albums-list {
-    grid-template-columns: repeat(5, 1fr);
-  }
+
 }

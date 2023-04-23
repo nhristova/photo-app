@@ -23,13 +23,14 @@ export function PhotoCard({ photo }: PhotoCardProps) {
 
   const imgLoaded = () => setLoading(false);
 
+  // <div className="photo-card" style={{  background: `url(${photo.thumbnailUrl}) center center`, backgroundSize: 'cover'}}>
   return (
     <div className="photo-card">
       <img className="fav-icon" onClick={toggleFavorite}
         src={isFavorite ? starYellow : starGray}
         title={isFavorite ? "Remove from favorites" : "Add to favorites"}
         alt="Star favorites" />
-        
+
       {/* Display a temp gif while image is loading */}
       <img style={{ display: loading ? "block" : "none" }}
         src={truckLoading}
@@ -38,7 +39,7 @@ export function PhotoCard({ photo }: PhotoCardProps) {
         src={photo.thumbnailUrl}
         onLoad={imgLoaded}
         className="photo-img" alt="Image placeholder" />
-      <div>{photo.title}</div>
+      <div className="photo-title">{photo.title}</div>
     </div>
   )
 }
