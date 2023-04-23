@@ -23,6 +23,7 @@ header h1 {
   grid-template-areas:
     "header header"
     "main main";
+  grid-template-rows: 80px 1fr;
 }
 
 .nav-bar {
@@ -168,17 +169,18 @@ header h1 {
   }
 
   .layout {
+    min-height: 97vh;
     grid-template-areas:
       "header header"
       "navigation main";
   }
 
   .albums-list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .photos-list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .photo-card {
@@ -188,19 +190,19 @@ header h1 {
 
 @media only screen and (min-width: 1024px) {
   .photos-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
   .albums-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 
 @media only screen and (min-width: 1440px) {
   .photos-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
   .albums-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
 }

@@ -36,6 +36,7 @@ View at: https://nhristova.github.io/photo-app/
     - [ ] Style hide section on top of menu 
     - [ ] Action to close the menu when clicked outside of it
     - [ ] Load all albums & photos, pagination?, sticky header?
+    - [ ] Dark theme?
 7. Tests
 
 Credits:
