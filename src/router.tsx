@@ -6,7 +6,8 @@ import { AlbumView } from './components/AlbumView';
 import { AlbumsListView } from './components/AlbumsListView';
 import { FavoritesView } from './components/FavoritesView';
 
-export const router = createBrowserRouter([
+const options = { basename: '/photo-app' };
+const routes = [
   {
     path: '/',
     element: <App />,
@@ -23,11 +24,13 @@ export const router = createBrowserRouter([
       {
         path: 'albums/:id',
         element: <AlbumView />
-      }, 
+      },
       {
         path: 'favorites',
         element: <FavoritesView />
       }
     ]
   }
-])
+];
+
+export const router = createBrowserRouter(routes, options)
