@@ -22,11 +22,11 @@ export function PhotoCard({ photo }: PhotoCardProps) {
       <div className="fav-icon" onClick={toggleFavorite}>
         {
           isFavorite ?
-            <img src={starYellow} /> :
-            <img src={starGray} />
+            <img src={starYellow} alt="Yellow star, image is in favorites" /> :
+            <img src={starGray} alt="Gray star, image is not in favorites" />
         }
       </div>
-      <img src={photo.thumbnailUrl} className="photo-img" />
+      <img src={photo.thumbnailUrl} className="photo-img" alt="Image placeholder" />
       <div>{photo.title}</div>
     </div>
   )

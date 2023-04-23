@@ -10,7 +10,7 @@ export function AlbumCard(props: AlbumCardProps) {
   return (
     <div className="album-card">
       <Link to={`/albums/${props.id}`}>
-        <img src={props.thumbnail} className="album-img" />
+        <img src={props.thumbnail} className="album-img" alt="Album thumbnail"/>
         <div>Album {props.id}</div>
         <div className="album-detail">{props.count} photos</div>
       </Link>
