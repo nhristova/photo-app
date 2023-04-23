@@ -5,6 +5,7 @@ import ErrorPage from './components/ErrorPage';
 import { AlbumView } from './components/AlbumView';
 import { AlbumsListView } from './components/AlbumsListView';
 import { FavoritesView } from './components/FavoritesView';
+import { PhotosListView } from './components/PhotosListView';
 
 // Only works with createBrowserRouter
 // const options = { basename: '/photo-app' };
@@ -17,7 +18,7 @@ const routes = [
     children: [
       {
         index: true,
-        element: <AlbumsListView />
+        element: <PhotosListView />
       },
       {
         path: 'albums',
