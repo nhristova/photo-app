@@ -117,15 +117,14 @@ header h1 {
 
 /** Photo Card Styles **/
 .photo-card {
+  width: 100%;
   max-width: 250px;
-  border-radius: 5px;
   position: relative;
   box-sizing: border-box;
   font-size: 0.8rem;
 }
 
 .photo-img {
-  width: 100%;
   object-fit: cover;
 }
 
@@ -135,9 +134,12 @@ header h1 {
   right: 10px;
   top: 10px;
   width: 25px;
+  transition-duration: 0.5s;
 }
 
-.fav-icon img:hover {
+.fav-icon:hover {
+  cursor: pointer;
+  transform: rotate(0.2turn);
   filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
 }
 

@@ -24,19 +24,17 @@ export function PhotoCard({ photo }: PhotoCardProps) {
 
   return (
     <div className="photo-card">
-      <div className="fav-icon" onClick={toggleFavorite}>
-        {
-          isFavorite ?
-            <img src={starYellow} alt="Yellow star, image is in favorites" /> :
-            <img src={starGray} alt="Gray star, image is not in favorites" />
-        }
-      </div>
-      <div style={{ display: loading ? "block" : "none" }}>
-        <img src={truckLoading} />
-      </div>
-      <div style={{ display: loading ? "none" : "block" }}>
-        <img src={photo.thumbnailUrl} onLoad={imgLoaded} className="photo-img" alt="Image placeholder" />
-      </div>
+      <img className="fav-icon" onClick={toggleFavorite}
+        src={isFavorite ? starYellow : starGray}
+        title={isFavorite ? "Remove from favorites" : "Add to favorites"}
+        alt="Star favorites" />
+      <img style={{ display: loading ? "block" : "none" }}
+        src={truckLoading}
+        className="photo-img" alt="Loading animation" />
+      <img style={{ display: loading ? "none" : "block" }}
+        src={photo.thumbnailUrl}
+        onLoad={imgLoaded}
+        className="photo-img" alt="Image placeholder" />
       <div>{photo.title}</div>
     </div>
   )

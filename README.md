@@ -27,3 +27,4 @@ Credits:
 - Star by ratubilqis1986 from <a href="https://thenounproject.com/browse/icons/term/star/" target="_blank" title="Star Icons">Noun Project</a>
 - Menu by DewDrops from <a href="https://thenounproject.com/browse/icons/term/menu/" target="_blank" title="menu Icons">Noun Project</a>
 - Butterfly by freepik <a href="https://www.freepik.com/free-vector/colorful-rainbow-set_2266161.htm" target="_blank" title="butterfly">FreePik</a>
+- Truck by <a href="https://indiefolio.com/project/59d622cb6e193/motion-series-1-loading-truck"_blank" title="truck">Indiefolio</a>
