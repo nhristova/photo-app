@@ -18,15 +18,15 @@ const routes = [
         element: <AlbumsListView />
       },
       {
-        path: 'albums',
+        path: '/albums',
         element: <AlbumsListView />
       },
       {
-        path: 'albums/:id',
+        path: '/albums/:id',
         element: <AlbumView />
       },
       {
-        path: 'favorites',
+        path: '/favorites',
         element: <FavoritesView />
       }
     ]

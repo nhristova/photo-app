@@ -91,6 +91,11 @@ header h1 {
   margin: 10px;
 }
 
+/** Error page */
+.error-page {
+  padding: 10px;
+}
+
 /** Album Card Styles **/
 .albums-list {
   display: grid;
