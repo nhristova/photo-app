@@ -1,21 +1,16 @@
-import { useEffect, useState } from "react";
-import { getPhotos } from "../data/loadData";
-import { Photo } from "../types/Photo";
-import { PhotoCard } from "./PhotoCard";
+import { PhotoCard } from './PhotoCard';
+import { AppState } from '../types';
+import { useSelector } from 'react-redux';
 
 export function PhotosListView() {
-  const [photos, setPhotos] = useState([] as Photo[])
-
-  useEffect(() => {
-    getPhotos()
-      .then(data => setPhotos(data))
-  }, []);
+  const selectPhotos = (state: AppState) => state.photos;
+  const photos = useSelector(selectPhotos);
 
   return (
     <>
       <h2>Photos</h2>
       <div className="photos-list">
-        {photos.map(photo => <PhotoCard key={photo.id} photo={photo} />)}
+        {photos.slice(0, 20).map(photo => <PhotoCard key={photo.id} photo={photo} />)}
       </div>
     </>
   )

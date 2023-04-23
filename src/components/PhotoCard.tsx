@@ -1,10 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { add, remove, AppState } from '../features/favoritesSlice';
+import { add, remove } from '../features/favoritesSlice';
 import { Photo } from '../types/Photo';
 import starYellow from '../assets/star-yellow.svg';
 import starGray from '../assets/star-gray.svg';
 import truckLoading from '../assets/truck-loading.gif';
 import { useState } from 'react';
+import { AppState } from '../types';
 
 interface PhotoCardProps {
   photo: Photo;

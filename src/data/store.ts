@@ -1,17 +1,26 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import {
   persistReducer, persistStore,
   FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import favoritesReducer from '../features/favoritesSlice';
+import { favoritesReducer } from '../features/favoritesSlice';
+import { photosReducer } from '../features/photosSlice';
+import { albumsReducer } from '../features/albumsSlice';
 
 const persistConfig = {
   key: 'root',
   storage,
+  whitelist: ['favorites']
 };
 
-const persistedReducer = persistReducer(persistConfig, favoritesReducer)
+const rootReducer = combineReducers({
+  favorites: favoritesReducer,
+  photos: photosReducer,
+  albums: albumsReducer,
+});
+
+const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 export const store = configureStore({
   reducer: persistedReducer,

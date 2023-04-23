@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react';
-import { getAlbums } from '../data/loadDataLocal';
 import { AlbumCard } from '../components/AlbumCard';
-import { Album } from '../types/Album';
+import { AppState } from '../types';
+import { useSelector } from 'react-redux';
 
 export function AlbumsListView() {
-  const [albums, setAlbums] = useState(getAlbums());
+  const selectAlbums = (state: AppState) => state.albums;
+  const albums = useSelector(selectAlbums);
 
   return (
     <>
       <h2>🌅 Albums</h2>
       <div className="albums-list">
-        {albums.slice(0, 7).map((a) => <AlbumCard key={a.id} {...a} />)}
+        {albums.map((a) => <AlbumCard key={a.id} {...a} />)}
       </div>
     </>
   )

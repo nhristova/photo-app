@@ -1,9 +1,9 @@
-import { useSelector } from "react-redux";
-import { AppState } from "../features/favoritesSlice";
-import { useEffect, useState } from "react";
-import { getPhotos } from "../data/loadData";
-import { Photo } from "../types/Photo";
-import { PhotoCard } from "./PhotoCard";
+import { useSelector } from 'react-redux';
+import { AppState } from '../types';
+import { useEffect, useState } from 'react';
+import { getPhotos } from '../data/loadData';
+import { Photo } from '../types/Photo';
+import { PhotoCard } from './PhotoCard';
 
 export function FavoritesView() {
   const selectFavorites = (state: AppState) => state.favorites;

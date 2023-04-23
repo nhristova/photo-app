@@ -7,9 +7,10 @@ View at: https://nhristova.github.io/photo-app/
     - [x] Redux
     - [x] Redux-Persist
 2. Data source: https://jsonplaceholder.typicode.com/photos
-    - [x] Stage 1 - use local data
-    - [ ] Stage 2 - fetch data
-    - [ ] Stage 3 - store in Redux
+    - The provided endpoint loads data in bulk. The app would be slow if it needs to load all the data for every view. One solution is to load data only once when the app loads, store it in state, and use it from there. However, this could create discrepancies if data is updated on the server. Another solution would be to display stored data initially, but still fetch from server for every view. Then, when new data is fetched from the server, update the UI (if needed). I chose the first solution, considering the data source remains unchanged and the endpoint returns all the app data.
+    - [x] Use local data (for backup if api fails)
+    - [x] Fetch data
+    - [x] Store in Redux
     - [ ] Stage 99 - own api?
 3. UI
     - [x] Albums list view  (1, 2, 3, 4, 5...) - actions - open album
