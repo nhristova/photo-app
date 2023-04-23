@@ -16,6 +16,6 @@ export const getPhotos = async (url: string = photosUrl): Promise<Photo[]> => {
   } catch (error) {
     console.log(error);
   }
-
+  // Use locally stored photos if fetch fails
   return Promise.resolve(photosLocal);
 }

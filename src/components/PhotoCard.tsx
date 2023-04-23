@@ -4,7 +4,7 @@ import { Photo } from '../types/Photo';
 import starYellow from '../assets/star-yellow.svg';
 import starGray from '../assets/star-gray.svg';
 import truckLoading from '../assets/truck-loading.gif';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 interface PhotoCardProps {
   photo: Photo;
@@ -28,6 +28,8 @@ export function PhotoCard({ photo }: PhotoCardProps) {
         src={isFavorite ? starYellow : starGray}
         title={isFavorite ? "Remove from favorites" : "Add to favorites"}
         alt="Star favorites" />
+        
+      {/* Display a temp gif while image is loading */}
       <img style={{ display: loading ? "block" : "none" }}
         src={truckLoading}
         className="photo-img" alt="Loading animation" />

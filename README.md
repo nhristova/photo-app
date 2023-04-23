@@ -29,12 +29,13 @@ View at: https://nhristova.github.io/photo-app/
     - [x] 🐛 Error page not loading after switch to createHashRouter
 6. 🦋 Styles - make it look good!
     - [x] Photos list responsive
-    - [ ] Albums list responsive
+    - [x] Albums list responsive
     - [ ] Back action on albums
-    - [ ] Wide screen take whole space
+    - [ ] Wide screen take whole width and height
     - [ ] Separate styles in relevant files
     - [ ] Style hide section on top of menu 
     - [ ] Action to close the menu when clicked outside of it
+    - [ ] Load all albums & photos, pagination?, sticky header?
 7. Tests
 
 Credits:
