@@ -28,6 +28,8 @@ View at: https://nhristova.github.io/photo-app/
     - [ ] Wide screen take whole space
     - [ ] Separate styles in relevant files
     - [ ] Page refresh on routes 404
+    - [ ] Hide on top of menu style
+    - [ ] Action to close the menu when clicked outside of it
 7. Tests
 
 Credits:

@@ -1,6 +1,6 @@
 import App from './App';
 import './index.css';
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
 import { AlbumView } from './components/AlbumView';
 import { AlbumsListView } from './components/AlbumsListView';
@@ -18,19 +18,19 @@ const routes = [
         element: <AlbumsListView />
       },
       {
-        path: '/albums',
+        path: 'albums',
         element: <AlbumsListView />
       },
       {
-        path: '/albums/:id',
+        path: 'albums/:id',
         element: <AlbumView />
       },
       {
-        path: '/favorites',
+        path: 'favorites',
         element: <FavoritesView />
       }
     ]
   }
 ];
 
-export const router = createBrowserRouter(routes, options)
+export const router = createHashRouter(routes)
