@@ -1,9 +1,9 @@
 import { MouseEventHandler } from 'react';
 import { NavLink } from 'react-router-dom';
-import butterfly from '../assets/butterfly.svg';
-import starRainbow from '../assets/star-rainbow.svg';
-import circle from '../assets/circle.svg';
-import hexagon from '../assets/hexagon.svg';
+import butterfly from '@root/assets/butterfly.svg';
+import starRainbow from '@root/assets/star-rainbow.svg';
+import circle from '@root/assets/circle.svg';
+import hexagon from '@root/assets/hexagon.svg';
 
 interface NavigationProps {
   toggleMenu: MouseEventHandler;

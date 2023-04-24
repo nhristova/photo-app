@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { Photo } from '../types/Photo';
+import { Photo } from '../types';
 
 
 const photosSlice = createSlice({

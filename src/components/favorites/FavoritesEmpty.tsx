@@ -1,5 +1,5 @@
 
-import unicorn from '../assets/unicorn.svg';
+import unicorn from '@root/assets/unicorn.svg';
 
 export function FavoritesEmpty() {
   return (

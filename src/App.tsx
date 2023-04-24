@@ -1,14 +1,11 @@
-import './App.css';
-import './Layout.css';
-import { Outlet } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Header } from './components/Header';
-import { Navigation } from './components/Navigation';
-import { getPhotos } from './data/loadData';
-import { storePhotos } from './features/photosSlice';
-import { storeAlbums } from './features/albumsSlice';
-import { transformPhotosToAlbums } from './data/transformData';
 import { useDispatch } from 'react-redux';
+import { Outlet } from 'react-router-dom';
+import './styles/App.css';
+import './styles/Layout.css';
+import { Header, Navigation } from './components';
+import { getPhotos, transformPhotosToAlbums } from './data';
+import { storePhotos, storeAlbums } from './features';
 
 const openStyle = 'open';
 

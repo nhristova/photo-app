@@ -1,5 +1,4 @@
-import { Album } from '../types/Album';
-import { Photo } from '../types/Photo';
+import { Album, Photo } from '../types';
 
 const transformToAlbumsById = (photos: Photo[]): { [id: string]: Photo[] } => {
   return photos.reduce((acc: any, p: Photo) => {

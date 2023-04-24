@@ -4,9 +4,11 @@ import {
   FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { favoritesReducer } from '../features/favoritesSlice';
-import { photosReducer } from '../features/photosSlice';
-import { albumsReducer } from '../features/albumsSlice';
+import {
+  favoritesReducer,
+  photosReducer,
+  albumsReducer
+} from '../features';
 
 const persistConfig = {
   key: 'root',

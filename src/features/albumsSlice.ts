@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { Album } from '../types/Album';
+import { Album } from '../types';
 
 
 const albumsSlice = createSlice({

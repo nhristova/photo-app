@@ -1,9 +1,8 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import { PhotoCard } from './PhotoCard';
-import { Photo } from '../types/Photo';
-import { AppState } from '../types';
 import { useSelector } from 'react-redux';
-import arrowBack from '../assets/arrow-back.svg';
+import { AppState, Photo } from '@root/types';
+import arrowBack from '@root/assets/arrow-back.svg';
+import { PhotoCard } from '../shared/PhotoCard';
 
 export function AlbumView() {
   const { id } = useParams();

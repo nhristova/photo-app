@@ -1,6 +1,6 @@
-import menu from '../assets/menu.svg';
-import butterfly from '../assets/butterfly.svg';
 import { MouseEventHandler } from 'react';
+import menu from '@root/assets/menu.svg';
+import butterfly from '@root/assets/butterfly.svg';
 
 interface HeaderProps {
   toggleMenu: MouseEventHandler;

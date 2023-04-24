@@ -1,6 +1,6 @@
-import { PhotoCard } from './PhotoCard';
-import { AppState } from '../types';
 import { useSelector } from 'react-redux';
+import { AppState } from '@root/types';
+import { PhotoCard } from '../shared/PhotoCard';
 
 export function PhotosListView() {
   const selectPhotos = (state: AppState) => state.photos;

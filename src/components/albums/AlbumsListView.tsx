@@ -1,6 +1,6 @@
-import { AlbumCard } from '../components/AlbumCard';
-import { AppState } from '../types';
 import { useSelector } from 'react-redux';
+import { AppState } from '@root/types';
+import { AlbumCard } from './AlbumCard';
 
 export function AlbumsListView() {
   const selectAlbums = (state: AppState) => state.albums;

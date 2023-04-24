@@ -1,9 +1,8 @@
-import { useSelector } from 'react-redux';
-import { AppState } from '../types';
 import { useEffect, useState } from 'react';
-import { getPhotos } from '../data/loadData';
-import { Photo } from '../types/Photo';
-import { PhotoCard } from './PhotoCard';
+import { useSelector } from 'react-redux';
+import { AppState, Photo } from '@root/types';
+import { getPhotos } from '@root/data';
+import { PhotoCard } from '../shared/PhotoCard';
 import { FavoritesEmpty } from './FavoritesEmpty';
 
 export function FavoritesView() {
@@ -11,6 +10,7 @@ export function FavoritesView() {
   const favorites = useSelector(selectFavorites);
   const [favs, setFavs] = useState([] as Photo[])
 
+  // TODO rework, do not call get photos
   useEffect(() => {
     getPhotos()
       .then(data => {

@@ -42,6 +42,7 @@ View at: https://nhristova.github.io/photo-app/
     - [ ] Action to close the menu when clicked outside of it
     - [ ] Load all albums & photos, pagination?, 
     - [x] Scroll only main container, fixed header and navigation
+    - [ ] Scroll to top after going back
     - [ ] Dark theme?
     - [x] Empty favorites view
 7. Tests
