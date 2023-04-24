@@ -8,3 +8,8 @@
 .unicorn-img {
   width: 100px;
 }
+
+/* Pagination buttons */
+.pagination {
+  margin-bottom: 10px;
+}

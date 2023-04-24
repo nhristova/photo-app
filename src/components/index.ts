@@ -6,5 +6,6 @@ export * from './favorites/FavoritesEmpty';
 export * from './favorites/FavoritesView';
 export * from './layout/Header';
 export * from './layout/Navigation';
+export * from './shared/PaginationButtons';
 export * from './shared/PhotoCard';
 export * from './photos/PhotosListView';
