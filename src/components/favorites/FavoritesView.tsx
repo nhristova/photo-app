@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import '@root/styles/shared.css';
 import { AppState, Photo } from '@root/types';
 import { getPhotos } from '@root/data';
 import { PhotoCard } from '../shared/PhotoCard';

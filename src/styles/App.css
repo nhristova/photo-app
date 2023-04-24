@@ -83,116 +83,7 @@ img {
   margin-right: 5px;
 }
 
-/** Error page */
-.error-page {
-  padding: 10px;
-  text-align: center;
-}
-
-/** Album Card Styles **/
-.albums-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-auto-rows: minmax(200px, auto);
-  grid-gap: 10px;
-}
-
-.album-img {
-  border-radius: 10px;
-}
-
-.album-detail {
-  font-size: 0.7rem;
-}
-
-/** Album View Styles **/
-.back-icon {
-  width: 45px;
-  border-radius: 50%;
-}
-
-.back-icon:hover {
-  cursor: pointer;
-  background-color: var(--highlight);
-}
-
-.photos-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-auto-rows: 150px;
-  grid-auto-flow: dense;
-  grid-gap: 0.2rem;
-}
-
-/** Photo Card Styles **/
-.photo-card {
-  width: 100%;
-  position: relative;
-  box-sizing: border-box;
-  font-size: 0.8rem;
-  transition: ease-in-out 0.5s;
-  overflow: hidden;
-}
-
-.photo-card:nth-child(11n) {
-  grid-column: span 2;
-  grid-row: span 1;
-}
-
-.photo-card:nth-child(3n) {
-  grid-column: span 1;
-  grid-row: span 2;
-}
-
-.photo-img {
-  object-fit: cover;
-  height: 100%;
-}
-
-.photo-title {
-  width: 100%;
-  visibility: hidden;
-  position: absolute;
-  bottom: 0;
-  transform: translateY(100%);
-}
-
-.photo-card:hover .photo-title,
-.photo-card:active .photo-title {
-  visibility: initial;
-  padding: 5px;
-  background-color: var(--background-color);
-  transform: translateY(0);
-  transition: ease-in-out 0.5s;
-}
-
-.fav-icon {
-  position: fixed;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 25px;
-  transition-duration: 0.5s;
-}
-
-.fav-icon:hover {
-  cursor: pointer;
-  transform: rotate(0.2turn);
-  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
-}
-
-/* Favorites view */
-.unicorn-img {
-  width: 100px;
-}
-
-@media only screen and (min-width: 425px) {
-  .photos-list {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 200px;
-  }
-
-}
+@media only screen and (min-width: 425px) {}
 
 @media only screen and (min-width: 640px) {
   .header h1 {
@@ -212,35 +103,9 @@ img {
     transform: translateX(0);
     padding-top: 30px;
   }
-
-  .photo-card {
-    font-size: 1rem;
-  }
-
-  .photos-list {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 250px;
-  }
-
-  .albums-list {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
-  }
 }
 
-@media only screen and (min-width: 1024px) {
-  .photos-list {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: 300px;
-  }
-
-  .albums-list {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: minmax(250px, auto);
-  }
-}
+@media only screen and (min-width: 1024px) {}
 
 
-@media only screen and (min-width: 1440px) {
-
-}
+@media only screen and (min-width: 1440px) {}

@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import { AppState } from '@root/types';
+import '@root/styles/Albums.css';
 import { AlbumCard } from './AlbumCard';
 
 export function AlbumsListView() {

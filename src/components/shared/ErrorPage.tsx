@@ -1,4 +1,5 @@
 import { useRouteError, Link } from 'react-router-dom';
+import '@root/styles/shared.css';
 
 export function ErrorPage() {
   const error: any = useRouteError();

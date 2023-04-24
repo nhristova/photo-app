@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { add, remove } from '@root/features';
 import { AppState, Photo } from '@root/types';
+import '@root/styles/Photos.css';
 import starYellow from '@root/assets/star-yellow.svg';
 import starGray from '@root/assets/star-gray.svg';
 import tempImg from '@root/assets/afc5c2.png';
