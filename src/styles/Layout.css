@@ -1,3 +1,5 @@
+@import './variables.css';
+
 .layout {
   display: grid;
   column-gap: 20px;
@@ -5,7 +7,7 @@
     "header header"
     "main main";
   grid-template-columns: 200px auto;
-  grid-template-rows: 70px auto;
+  grid-template-rows: var(--header-height) auto;
 }
 
 /* Small screen nav-bar hidden */
@@ -13,8 +15,8 @@
   position: fixed;
   width: 200px;
   height: 100%;
-  /* photos-list comes on top of the nav but albums-list doesn't */
-  z-index: 1;
+  /* photos-list comes on top of the nav but albums-list doesn't because of grid */
+  z-index: 10;
 }
 
 .header {
@@ -23,7 +25,7 @@
 
 .main {
   grid-area: main;
-  height: calc(97vh - 70px);
+  height: calc(97vh - var(--header-height));
   display: flex;
   flex-direction: column;
   overflow-y: scroll;

@@ -1,0 +1,8 @@
+#root {
+  /* Size */
+  --header-height: 70px;
+  /* Color */
+  --background-color: #f5f5f7;
+  --button-color: #e7e7e7;
+  --highlight: #dadce0;
+}

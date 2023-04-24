@@ -43,6 +43,7 @@ View at: https://nhristova.github.io/photo-app/
     - [ ] Load all albums & photos, pagination?, 
     - [x] Scroll only main container, fixed header and navigation
     - [ ] Scroll to top after going back
+    - [ ] Make back arrow sticky (update z-index of nav to be larger) -     position: sticky; top: 0px; z-index: 1;
     - [ ] Dark theme?
     - [x] Empty favorites view
 7. Tests
