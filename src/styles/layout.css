@@ -28,7 +28,7 @@
   height: calc(97vh - var(--header-height));
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 @media only screen and (min-width: 640px) {

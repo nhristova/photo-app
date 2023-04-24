@@ -12,12 +12,28 @@
 /** Album View Styles **/
 .back-icon {
   width: 45px;
+  height: 45px;
   border-radius: 50%;
+  background-color: var(--button-color);
 }
 
 .back-icon:hover {
   cursor: pointer;
   background-color: var(--highlight);
+}
+
+.album-title {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.album-title h2 {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 /** Album List Styles **/

@@ -24,7 +24,7 @@ View at: https://nhristova.github.io/photo-app/
     - [x] Photo card component - image, title - actions - add/remove favorite 
     - [x] Layout - header, menu, main sections
     - [x] Menu - 🍔 opens from hamburger icon on small screens, fixed position on larger screens
-4. 💛 Favourites 
+4. 💛 Favorites 
     - [x] Actions - add, remove fav
     - [x] Data stored in Redux State
     - [x] Persist favorites after page reload (restart?)
@@ -37,13 +37,13 @@ View at: https://nhristova.github.io/photo-app/
     - [x] Albums list responsive
     - [x] Back action on albums
     - [x] Wide screen take whole width and height
-    - [ ] Separate styles in relevant files
+    - [x] Separate styles in relevant files (use css modules?)
     - [x] Style hide section on top of menu 
     - [ ] Action to close the menu when clicked outside of it
     - [ ] Load all albums & photos, pagination?, 
     - [x] Scroll only main container, fixed header and navigation
     - [ ] Scroll to top after going back
-    - [ ] Make back arrow sticky (update z-index of nav to be larger) -  position: sticky; top: 0px; z-index: 1;
+    - [x] Make back arrow sticky (update z-index of nav to be larger)
     - [ ] Dark theme?
     - [ ] Empty favorites view, should not show on initial load
 7. Tests

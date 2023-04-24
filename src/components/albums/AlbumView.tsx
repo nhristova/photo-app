@@ -13,12 +13,12 @@ export function AlbumView() {
 
   return (
     <>
-      <div>
+      <div className="album-title">
         <img src={arrowBack} className="back-icon"
           onClick={() => navigate(-1)} alt="Go back"
           title="Back" />
+        <h2>🌄 Album {id}</h2>
       </div>
-      <h2>🌄 Album {id}</h2>
       <div className="photos-list">
         {
           photos.map(p => <PhotoCard key={p.id} photo={p} />)
