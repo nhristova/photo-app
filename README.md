@@ -39,13 +39,13 @@ View at: https://nhristova.github.io/photo-app/
     - [x] Wide screen take whole width and height
     - [x] Separate styles in relevant files (use css modules?)
     - [x] Style hide section on top of menu 
-    - [ ] Action to close the menu when clicked outside of it
     - [x] Load all albums & photos with pagination 
     - [x] Scroll only main container, fixed header and navigation
-    - [ ] Scroll to top after going back
     - [x] Make back arrow sticky (update z-index of nav to be larger)
-    - [ ] Dark theme?
     - [x] Empty favorites view, should not show on initial load
+    - [ ] Action to close the menu when clicked outside of it
+    - [ ] Scroll to top after going back
+    - [ ] Dark theme?
 7. Tests
 
 Image credits:
