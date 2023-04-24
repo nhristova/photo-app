@@ -8,8 +8,10 @@
   grid-template-rows: 70px auto;
 }
 
+/* Small screen nav-bar hidden */
 .nav-bar {
-  grid-area: navigation;
+  position: fixed;
+  height: 100%;
 }
 
 .header {
@@ -29,5 +31,11 @@
     grid-template-areas:
       "header header"
       "navigation main";
+  }
+
+  .nav-bar {
+    grid-area: navigation;
+    position: initial;
+    height: auto;
   }
 }

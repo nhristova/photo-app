@@ -13,10 +13,10 @@ interface NavigationProps {
 export function Navigation({ toggleMenu, openStyle }: NavigationProps) {
   return (
     <nav id="nav-bar" className={`nav-bar ${openStyle}`}>
-      <div className="menu-header">
-        <div className="menu-top" onClick={toggleMenu}>Hide</div>
-        <div className="menu-brand">
-          <img src={butterfly} className="menu-logo" alt="App logo butterfly" />
+      <div className="nav-header">
+        <div className="nav-hide" onClick={toggleMenu}>Hide</div>
+        <div className="nav-brand">
+          <img src={butterfly} className="nav-logo" alt="App logo butterfly" />
           Color Mosaic</div>
       </div>
       <NavLink to="/" className="nav-link" onClick={toggleMenu}>
