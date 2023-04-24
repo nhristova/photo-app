@@ -52,6 +52,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     color: rgba(255, 255, 255, 0.87);

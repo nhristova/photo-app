@@ -43,9 +43,9 @@ View at: https://nhristova.github.io/photo-app/
     - [x] Scroll only main container, fixed header and navigation
     - [x] Make back arrow sticky (update z-index of nav to be larger)
     - [x] Empty favorites view, should not show on initial load
-    - [ ] Action to close the menu when clicked outside of it
+    - [x] Action to close the menu when clicked outside of it
     - [ ] Scroll to top after going back
-    - [ ] Dark theme?
+    - [ ] Dark theme
 7. Tests
 
 Image credits:
