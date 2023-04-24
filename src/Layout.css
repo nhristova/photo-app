@@ -11,7 +11,10 @@
 /* Small screen nav-bar hidden */
 .nav-bar {
   position: fixed;
+  width: 200px;
   height: 100%;
+  /* photos-list comes on top of the nav but albums-list doesn't */
+  z-index: 1;
 }
 
 .header {
@@ -36,6 +39,7 @@
   .nav-bar {
     grid-area: navigation;
     position: initial;
+    width: auto;
     height: auto;
   }
 }

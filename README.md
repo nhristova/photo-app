@@ -35,19 +35,20 @@ View at: https://nhristova.github.io/photo-app/
 6. 🦋 Styles - make it look good!
     - [x] Photos list responsive
     - [x] Albums list responsive
-    - [ ] Back action on albums
-    - [ ] Wide screen take whole width and height
+    - [x] Back action on albums
+    - [x] Wide screen take whole width and height
     - [ ] Separate styles in relevant files
     - [x] Style hide section on top of menu 
     - [ ] Action to close the menu when clicked outside of it
-    - [ ] Load all albums & photos, pagination?, sticky header?
+    - [ ] Load all albums & photos, pagination?, 
+    - [x] Scroll only main container, fixed header and navigation
     - [ ] Dark theme?
-    - [ ] Empty favorites
+    - [x] Empty favorites view
 7. Tests
 
 Image credits:
 - Star by ratubilqis1986 from <a href="https://thenounproject.com/browse/icons/term/star/" target="_blank" title="Star Icons">Noun Project</a>
 - Menu by DewDrops from <a href="https://thenounproject.com/browse/icons/term/menu/" target="_blank" title="menu Icons">Noun Project</a>
 - Arrow Back by Division Icons from <a href="https://thenounproject.com/browse/icons/term/arrow-back/" target="_blank" title="Arrow Back Icons">Noun Project</a>
-- Butterfly by freepik <a href="https://www.freepik.com/free-vector/colorful-rainbow-set_2266161.htm" target="_blank" title="butterfly">FreePik</a>
+- Rainbow icons by freepik <a href="https://www.freepik.com/free-vector/colorful-rainbow-set_2266161.htm" target="_blank" title="Rainbow Set">FreePik</a>
 - Truck by <a href="https://indiefolio.com/project/59d622cb6e193/motion-series-1-loading-truck" target="_blank" title="truck">Indiefolio</a>

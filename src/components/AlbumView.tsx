@@ -14,7 +14,9 @@ export function AlbumView() {
   return (
     <>
       <div>
-        <img src={arrowBack} className="back-icon" onClick={() => navigate(-1)} alt="Go back" />
+        <img src={arrowBack} className="back-icon"
+          onClick={() => navigate(-1)} alt="Go back"
+          title="Back" />
       </div>
       <h2>🌄 Album {id}</h2>
       <div className="photos-list">

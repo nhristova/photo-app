@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { getPhotos } from '../data/loadData';
 import { Photo } from '../types/Photo';
 import { PhotoCard } from './PhotoCard';
+import { FavoritesEmpty } from './FavoritesEmpty';
 
 export function FavoritesView() {
   const selectFavorites = (state: AppState) => state.favorites;
@@ -16,13 +17,16 @@ export function FavoritesView() {
         const favs = data.filter(el => favorites.includes(el.id));
         setFavs(favs);
       })
-  }, [favorites])
+  }, [favorites]);
 
   return (
     <>
       <h2>Favorites</h2>
       <div className="photos-list">
-        {favs.map(photo => <PhotoCard key={photo.id} photo={photo} />)}
+        {favs.length
+          ? favs.map(photo => <PhotoCard key={photo.id} photo={photo} />)
+          : <FavoritesEmpty />
+        }
       </div>
     </>
   )
