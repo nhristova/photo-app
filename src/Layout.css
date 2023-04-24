@@ -4,35 +4,28 @@
   grid-template-areas:
     "header header"
     "main main";
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 70px 1fr;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 70px auto;
 }
 
 .nav-bar {
   grid-area: navigation;
-  min-width: 200px;
-  /* positioning */
-  /* TODO think of a better way or remove grid layout, fixed position disregards grid */
-  position: fixed;
-  height: 100%;
-  z-index: 1;
 }
 
 .header {
   grid-area: header;
-  position: sticky;
-  top: 0;
-  z-index: 2;
 }
 
 .main {
   grid-area: main;
-  overflow: auto;
+  height: calc(97vh - 70px);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 
 @media only screen and (min-width: 640px) {
   .layout {
-    min-height: 97vh;
     grid-template-areas:
       "header header"
       "navigation main";
