@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import '@root/styles/Albums.css';
+import '@root/styles/albums.css';
 import { AppState, Photo } from '@root/types';
 import arrowBack from '@root/assets/arrow-back.svg';
 import { PhotoCard } from '../shared/PhotoCard';

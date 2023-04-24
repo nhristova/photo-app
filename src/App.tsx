@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 import './styles/App.css';
-import './styles/Layout.css';
+import './styles/layout.css';
 import { Header, Navigation } from './components';
 import { getPhotos, transformPhotosToAlbums } from './data';
 import { storePhotos, storeAlbums } from './features';

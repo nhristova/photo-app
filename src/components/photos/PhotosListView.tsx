@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { AppState } from '@root/types';
-import '@root/styles/Photos.css';
+import '@root/styles/photos.css';
 import { PhotoCard } from '../shared/PhotoCard';
 
 export function PhotosListView() {
