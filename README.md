@@ -1,4 +1,4 @@
-# Photo App
+# Color Mosaic Photo App
 
 
 ## Description

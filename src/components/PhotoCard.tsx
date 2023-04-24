@@ -3,7 +3,7 @@ import { add, remove } from '../features/favoritesSlice';
 import { Photo } from '../types/Photo';
 import starYellow from '../assets/star-yellow.svg';
 import starGray from '../assets/star-gray.svg';
-import truckLoading from '../assets/truck-loading.gif';
+import tempImg from '../assets/afc5c2.png';
 import { useState } from 'react';
 import { AppState } from '../types';
 
@@ -33,8 +33,8 @@ export function PhotoCard({ photo }: PhotoCardProps) {
 
       {/* Display a temp gif while image is loading */}
       <img style={{ display: loading ? "block" : "none" }}
-        src={truckLoading}
-        className="photo-img" alt="Loading animation" />
+        src={tempImg}
+        className="photo-img" alt="Temp image while loading" />
       <img style={{ display: loading ? "none" : "block" }}
         src={photo.thumbnailUrl}
         onLoad={imgLoaded}
