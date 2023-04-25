@@ -51,9 +51,19 @@ View at: https://nhristova.github.io/photo-app/
     - [ ] Components
     - [ ] Logic
 
-Image credits:
+## Image credits:
 - Star by ratubilqis1986 from <a href="https://thenounproject.com/browse/icons/term/star/" target="_blank" title="Star Icons">Noun Project</a>
 - Menu by DewDrops from <a href="https://thenounproject.com/browse/icons/term/menu/" target="_blank" title="menu Icons">Noun Project</a>
 - Arrow Back by Division Icons from <a href="https://thenounproject.com/browse/icons/term/arrow-back/" target="_blank" title="Arrow Back Icons">Noun Project</a>
 - Rainbow icons by freepik <a href="https://www.freepik.com/free-vector/colorful-rainbow-set_2266161.htm" target="_blank" title="Rainbow Set">FreePik</a>
 - Truck by <a href="https://indiefolio.com/project/59d622cb6e193/motion-series-1-loading-truck" target="_blank" title="truck">Indiefolio</a>
+
+## Views:
+
+![1](/screenshots/mobile-s_photos.png)
+![2](/screenshots/mobile-s_menu.png)
+![3](/screenshots/mobile-s_albums.png)
+![4](/screenshots/mobile-s_album-hover.png)
+![5](/screenshots/mobile-s_favorites-empty.png)
+![6](/screenshots/tablet_album-page-2.png)
+![7](/screenshots/laptop-l_phots-hover.png)
