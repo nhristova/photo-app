@@ -47,6 +47,9 @@ View at: https://nhristova.github.io/photo-app/
     - [ ] Scroll to top after going back
     - [ ] Dark theme
 7. Tests
+    - [x] Set up
+    - [ ] Components
+    - [ ] Logic
 
 Image credits:
 - Star by ratubilqis1986 from <a href="https://thenounproject.com/browse/icons/term/star/" target="_blank" title="Star Icons">Noun Project</a>

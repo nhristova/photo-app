@@ -4,6 +4,7 @@ export * from './albums/AlbumsListView';
 export * from './shared/ErrorPage';
 export * from './favorites/FavoritesEmpty';
 export * from './favorites/FavoritesView';
+export * from './layout/About';
 export * from './layout/Header';
 export * from './layout/Navigation';
 export * from './shared/PaginationButtons';

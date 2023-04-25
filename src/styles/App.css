@@ -82,6 +82,13 @@
   margin-right: 5px;
 }
 
+.about {
+  position: fixed;
+  bottom: 20px;
+  padding-left: 20px;
+  font-size: 0.8rem;
+}
+
 .clicker {
   position: absolute;
   width: 100vw;

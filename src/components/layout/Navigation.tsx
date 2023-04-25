@@ -4,6 +4,7 @@ import butterfly from '@root/assets/butterfly.svg';
 import starRainbow from '@root/assets/star-rainbow.svg';
 import circle from '@root/assets/circle.svg';
 import hexagon from '@root/assets/hexagon.svg';
+import { About } from './About';
 
 interface NavigationProps {
   toggleMenu: MouseEventHandler;
@@ -32,6 +33,7 @@ export function Navigation({ toggleMenu, openStyle }: NavigationProps) {
           <img src={starRainbow} className="nav-icon" />
           <span>Favorites</span>
         </NavLink>
+        <About />
       </nav>
       {openStyle === 'open' && <div className="clicker" onClick={toggleMenu}></div>}
     </>
