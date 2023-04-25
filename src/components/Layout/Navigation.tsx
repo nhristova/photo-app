@@ -15,7 +15,7 @@ export function Navigation({ toggleMenu, openStyle }: NavigationProps) {
     <>
       <nav id="nav-bar" className={`nav-bar ${openStyle}`}>
         <div className="nav-header">
-          <div className="nav-hide" onClick={toggleMenu}>Hide</div>
+          <div className="nav-hide" onClick={toggleMenu}></div>
           <div className="nav-brand">
             <img src={butterfly} className="nav-logo" alt="App logo butterfly" />
             Color Mosaic</div>
